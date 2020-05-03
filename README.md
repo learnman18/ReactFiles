@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
+  <head>
+    <style>
+      div{
+        color:red;
+      }
+    </style>
+  </head>
   <body>
     <div>Hello</div>
   </body>
