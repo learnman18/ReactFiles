@@ -1,7 +1,9 @@
 import React from 'react';
 // import { ReactDOM } from 'react';
 import './App.css';
-import Increment from './components/Increment';
+import Accordion from './components/accordion/Accordion';
+import AccordionTwo from './components/accordion/AccordionTwo';
+// import Increment from './components/Increment';
 // import ToDoList from './components/ToDoList';
 // import FormTwo from './components/FormTwo';
 // import FormOne from './components/FormOne';
@@ -17,7 +19,8 @@ import Increment from './components/Increment';
 function App() {
   return (
     <>
-      <Increment></Increment>
+      {/* <Accordion></Accordion> */}
+      <AccordionTwo></AccordionTwo>
     </>
   );
 }
