@@ -1,8 +1,12 @@
 import React from 'react';
 // import { ReactDOM } from 'react';
 import './App.css';
-import Accordion from './components/accordion/Accordion';
-import AccordionTwo from './components/accordion/AccordionTwo';
+import TheApp from './components/notes/TheApp';
+// import ExampleTwoUseEfct from './components/useEfect/ExampleTwo';
+// import EffectExample from './components/useEfect/useEfct';
+// import CompA from './components/createContxt/CompA';
+// import Accordion from './components/accordion/Accordion';
+// import AccordionTwo from './components/accordion/AccordionTwo';
 // import Increment from './components/Increment';
 // import ToDoList from './components/ToDoList';
 // import FormTwo from './components/FormTwo';
@@ -16,13 +20,15 @@ import AccordionTwo from './components/accordion/AccordionTwo';
 // import Mov from './components/MovieData';
 
 
+
 function App() {
   return (
     <>
-      {/* <Accordion></Accordion> */}
-      <AccordionTwo></AccordionTwo>
+        <TheApp></TheApp>
     </>
   );
 }
 
+
 export default App;
+

@@ -10,7 +10,7 @@ const DisplayAccordion = (props)=>{
     const showAnswer =()=>{
         console.log("hello" , [props.index]);
         if(showAccord===true){
-            setShowAccord(false)
+            setShowAccord(false);
         }else{
             setShowAccord(true)
         }

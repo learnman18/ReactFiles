@@ -6,6 +6,7 @@ import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log("button is clicked");
 root.render(
   <React.StrictMode>
       <App></App>
