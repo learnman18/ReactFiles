@@ -1,7 +1,8 @@
 import React from 'react';
 // import { ReactDOM } from 'react';
 import './App.css';
-import TheApp from './components/notes/TheApp';
+import AxiosExample from './components/axios/AxiosExample';
+// import TheApp from './components/notes/TheApp';
 // import ExampleTwoUseEfct from './components/useEfect/ExampleTwo';
 // import EffectExample from './components/useEfect/useEfct';
 // import CompA from './components/createContxt/CompA';
@@ -24,7 +25,8 @@ import TheApp from './components/notes/TheApp';
 function App() {
   return (
     <>
-        <TheApp></TheApp>
+        {/* <TheApp></TheApp> */}
+        <AxiosExample></AxiosExample>
     </>
   );
 }

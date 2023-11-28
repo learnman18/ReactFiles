@@ -12,6 +12,8 @@ Header -
 CreateNotes - 
 Notes - 
 
+TheApp.js
+
 suppose now Notes comp has been called so Notes.js comp can access all the props which we has passed from 
 TheApp.js file which a parent file.
 
@@ -41,6 +43,8 @@ return(
     )
 
 -----------------------------
+
+createNotes.js
 
     const inputChngEvent = (event)=>{
         // console.log(event.target.value);
@@ -73,3 +77,31 @@ return(
         })
         //this is used to make the title and content field empty once you click the button to add the notes
     }
+
+    -------------
+
+    notes.js
+
+    itemIdtoDelete is coming from the props we haave passed. so it will check the index number passed from 
+    the deleteItem(i) 'itemIdtoDelete' and the i passed in the filter function once the condition matches it will delete that note,
+    it will just check if the index number of both i & itemidTodelete is same it will delete it, as we know filter loop through all 
+    the arrays elements, suppose I clicked on the 1st note so it will check the index of clicked note as I have clicked on the
+    1st one it will check the index of filter it will start from the 0 and once it reaches the 1 it will delte that item, 
+    as we know filter loops through all one by one and since it returns array it starts from zero, check the console to understand 
+    it better.
+
+    const deleteItem = (itemIdtoDelete)=>{
+        const newAddItem = addItem.filter((item , i) =>{
+            console.log("deleted Item" , i , itemIdtoDelete , i !== itemIdtoDelete);
+            return i !== itemIdtoDelete
+        })
+        setAddItem(newAddItem)
+    }
+
+
+    --------------
+
+    we can pass the props function and call the function for notes.js in notes.js file it self like
+    we have did it for the createNotes.js file, but for notes.js we have directly called it in props
+    created a function.
+    check the function props of both createNotes.js and notes.js file for better understanding

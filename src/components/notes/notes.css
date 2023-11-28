@@ -16,3 +16,6 @@ p{
     margin-block-end: 5px;
     width:150px
 }
+.added-Notes{
+    display: flex;
+}

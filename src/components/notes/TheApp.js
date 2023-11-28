@@ -21,6 +21,7 @@ const TheApp = ()=>{
     //itemIdtoDelete is coming from the props we haave passed.
     const deleteItem = (itemIdtoDelete)=>{
         const newAddItem = addItem.filter((item , i) =>{
+            console.log("deleted Item" , i , itemIdtoDelete , i !== itemIdtoDelete);
             return i !== itemIdtoDelete
         })
         setAddItem(newAddItem)
@@ -31,18 +32,20 @@ const TheApp = ()=>{
             <Header></Header>
             <CreateNotes test={AddNotes}></CreateNotes>
             <br /><br />
-            {
-                addItem.map((curVal , i)=>{
-                    console.log("curVal" , curVal);
-                    if(curVal.Title !== "" && curVal.Content !== ""){
-                        return <Notes key={i} id={i} 
-                                title={curVal.Title} content={curVal.Content} 
-                                handleDelete={()=>deleteItem(i)}></Notes>
-                    }else{
-                        return null;
-                    }
-                })
-            }
+            <div className="added-Notes">
+                {
+                    addItem.map((curVal , i)=>{
+                        console.log("curVal" , curVal);
+                        if(curVal.Title !== "" && curVal.Content !== ""){
+                            return <Notes key={i} id={i} 
+                                    title={curVal.Title} content={curVal.Content} 
+                                    handleDelete={()=>deleteItem(i)}></Notes>
+                        }else{
+                            return null;
+                        }
+                    })
+                }
+            </div>
         </>
     )
 }
