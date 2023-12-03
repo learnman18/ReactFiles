@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 const SearchResult = (props) => {
     
-    const [imageSearched , setImageSearched] = useState([]);
-    const allImgs = "https://source.unsplash.com/random/300×300";
-
-    // console.log(typeof(imageSearched));
-    const x = setImageSearched(allImgs);
-    console.log(typeof(x));
-
+    const allImgs = `https://source.unsplash.com/random/?${props.searchedImg}`;
+    console.log(allImgs);
 
     return(
         <>
