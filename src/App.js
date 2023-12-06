@@ -2,7 +2,8 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 // import { ReactDOM } from 'react';
 import './App.css';
-import SearchImg from './components/SearchImg/Search';
+// import SearchImg from './components/SearchImg/Search';
+import Menu from './components/webPage/Menu'
 // import AxiosExample from './components/axios/AxiosExample';
 // import TheApp from './components/notes/TheApp';
 // import ExampleTwoUseEfct from './components/useEfect/ExampleTwo';
@@ -29,8 +30,7 @@ function App() {
     <>
       {/* <Link to='/'>Home</Link> | 
       <Link to='travel'>Travel</Link> */}
-
-      <SearchImg></SearchImg>
+      <Menu></Menu>
     </>
   );
 }
