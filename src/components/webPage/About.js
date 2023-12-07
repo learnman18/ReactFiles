@@ -5,7 +5,8 @@ const About = () => {
     return(
         <>
             <Common
-                title="this is About page"
+                title="This is About page"
+                desc="We are team of talented designers making websites"
                 buttonName="Get Started"
                 btnLink = "/services"
             ></Common>
