@@ -10,15 +10,15 @@ but here I have destructre it so I won't have to use props keyword all the time.
 const Cards = ({courseBtn , courseDesc , courseImg , courseName}) => {
     return(
         <>
-        <div className="col-md-4">
+        <div className="col-md-4 d-flex align-items-stretch">
             <div className="card me-3 mb-5" >
                 <div>
                     <img style={{height:220}} src={courseImg} className="card-img-top img-fluid" alt="..."v/>
                 </div>
-                <div className="card-body">
+                <div className="card-body d-flex flex-column">
                     <h3>{courseName}</h3>
                     <p className="card-text">{courseDesc}</p>
-                    <Link to={courseBtn} className="btn btn-primary">Read More</Link>                    
+                    <Link to={courseBtn} className="btn btn-primary align-self-start mt-auto">Read More</Link>                    
                 </div>
             </div>
             </div>
