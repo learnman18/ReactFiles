@@ -143,3 +143,22 @@
       transform: translateY(-10px);
     }
   }
+
+
+  /* Weather CSS */
+
+/*TO DO APP*/
+
+i.fa-plus {
+  padding: 7px 2px;
+  border: none;
+}
+
+.bg-lavender{
+  background-color: lavender;
+  padding: 0 8px;
+}
+
+.fixBrdr {
+  border: none;
+}

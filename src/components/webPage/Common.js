@@ -14,7 +14,6 @@ const Common = (props) => {
                 <h2>{props.desc}</h2>
                 <div className="d-flex justify-content-center justify-content-lg-start">
                     <Link to={props.btnLink} className="btn-get-started scrollto">{props.buttonName}</Link>
-                    
                 </div>
                 </div>
                 <div className="col-lg-6 order-1 order-lg-2 hero-img aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
