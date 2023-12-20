@@ -1,5 +1,7 @@
 import React from "react";
 import Common from "./Common";
+import MyWeatherApp from "./MyWeather";
+import MyToDoList from "./NewToDoApp/ToDoCURD";
 
 const Home = () => {
 
@@ -11,6 +13,8 @@ const Home = () => {
                 buttonName="Get Started"
                 btnLink = "/services"
             ></Common>
+            <MyWeatherApp></MyWeatherApp>
+            <MyToDoList></MyToDoList>
         </>
     )
 }
