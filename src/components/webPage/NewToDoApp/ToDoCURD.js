@@ -33,7 +33,7 @@ const MyToDoList = () => {
             setToggleBtns(true);
             setinputData("");  // just to empty the input filed once the item is added.
         }else {
-            const allInputData = {id: new Date().getTime().toString() , name : inputData} //id we are creating just for unique ID
+            const allInputData = {id: new Date().getTime().toString() , name : inputData} //id we are creating so we won't have to use the index
             setAddItem([...AddItem , allInputData]);
             setinputData(""); // just to empty the input filed once the item is added.
         }
